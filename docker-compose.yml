@@ -24,9 +24,9 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
-    # Startup runs `alembic upgrade head` (currently a no-op, no
-    # migrations exist yet) before serving. A future seed step will
-    # be added to docker/entrypoint.sh alongside it.
+    # Startup (see docker/entrypoint.sh) runs `alembic upgrade head`,
+    # then seeds fixture data via scripts/generate_fixtures.py before
+    # serving. The seed step is idempotent and safe to run every time.
 
 volumes:
   postgres_data:

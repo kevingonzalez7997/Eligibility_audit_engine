@@ -21,7 +21,7 @@ class CreditUnion(Base):
     __tablename__ = "credit_unions"
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True)
-    name: Mapped[str] = mapped_column(String, nullable=False)
+    name: Mapped[str] = mapped_column(String, nullable=False, unique=True)
 
 
 class Product(Base):
@@ -34,6 +34,12 @@ class Product(Base):
         index=True,
     )
     name: Mapped[str] = mapped_column(String, nullable=False)
+
+    __table_args__ = (
+        UniqueConstraint(
+            "credit_union_id", "name", name="uq_products_credit_union_id_name"
+        ),
+    )
 
 
 class Ruleset(Base):

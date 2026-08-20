@@ -1,0 +1,167 @@
+{
+  "credit_unions": [
+    {
+      "name": "Northstar Community Credit Union",
+      "products": [
+        {
+          "id": "ncu_auto_loan_standard",
+          "name": "Standard Auto Loan",
+          "rules": [
+            {
+              "field": "credit_score",
+              "operator": "gte",
+              "value": 620
+            },
+            {
+              "field": "annual_income",
+              "operator": "gte",
+              "value": 24000
+            },
+            {
+              "field": "state",
+              "operator": "eq",
+              "value": "CA"
+            }
+          ]
+        },
+        {
+          "id": "ncu_credit_card_rewards",
+          "name": "Premium Rewards Credit Card",
+          "rules": [
+            {
+              "field": "credit_score",
+              "operator": "gte",
+              "value": 700
+            },
+            {
+              "field": "annual_income",
+              "operator": "gte",
+              "value": 45000
+            },
+            {
+              "field": "employment_status",
+              "operator": "eq",
+              "value": "employed"
+            }
+          ]
+        },
+        {
+          "id": "ncu_heloc_standard",
+          "name": "Home Equity Line of Credit",
+          "rules": [
+            {
+              "field": "credit_score",
+              "operator": "gte",
+              "value": 680
+            },
+            {
+              "field": "account_age_months",
+              "operator": "gte",
+              "value": 12
+            },
+            {
+              "field": "state",
+              "operator": "eq",
+              "value": "CA"
+            }
+          ]
+        },
+        {
+          "id": "ncu_savings_starter",
+          "name": "Starter Savings Account",
+          "rules": [
+            {
+              "field": "account_age_months",
+              "operator": "gte",
+              "value": 0
+            },
+            {
+              "field": "state",
+              "operator": "eq",
+              "value": "CA"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Harborview Credit Union",
+      "products": [
+        {
+          "id": "hcu_auto_loan_new_used",
+          "name": "New/Used Auto Loan",
+          "rules": [
+            {
+              "field": "credit_score",
+              "operator": "gte",
+              "value": 640
+            },
+            {
+              "field": "annual_income",
+              "operator": "gte",
+              "value": 28000
+            },
+            {
+              "field": "state",
+              "operator": "eq",
+              "value": "TX"
+            }
+          ]
+        },
+        {
+          "id": "hcu_credit_card_cashback",
+          "name": "Cash Back Credit Card",
+          "rules": [
+            {
+              "field": "credit_score",
+              "operator": "gte",
+              "value": 660
+            },
+            {
+              "field": "employment_status",
+              "operator": "eq",
+              "value": "employed"
+            }
+          ]
+        },
+        {
+          "id": "hcu_heloc_standard",
+          "name": "Home Equity Line of Credit",
+          "rules": [
+            {
+              "field": "credit_score",
+              "operator": "gte",
+              "value": 700
+            },
+            {
+              "field": "annual_income",
+              "operator": "gte",
+              "value": 60000
+            },
+            {
+              "field": "account_age_months",
+              "operator": "gte",
+              "value": 24
+            }
+          ]
+        },
+        {
+          "id": "hcu_savings_starter",
+          "name": "Starter Savings Account",
+          "rules": [
+            {
+              "field": "account_age_months",
+              "operator": "gte",
+              "value": 0
+            },
+            {
+              "field": "state",
+              "operator": "eq",
+              "value": "TX"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

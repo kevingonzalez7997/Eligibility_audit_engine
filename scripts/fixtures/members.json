@@ -1,0 +1,187 @@
+{
+  "members": [
+    {
+      "member_id": "73772dc3-b841-4350-a432-095994e38a61",
+      "profile": {
+        "credit_score": 810,
+        "annual_income": 132000,
+        "state": "CA",
+        "employment_status": "employed",
+        "account_age_months": 96
+      }
+    },
+    {
+      "member_id": "303ed5e7-50b7-4116-a1fe-34c04615187f",
+      "profile": {
+        "credit_score": 590,
+        "state": "TX",
+        "employment_status": "unemployed",
+        "account_age_months": 4
+      }
+    },
+    {
+      "member_id": "d39dda75-8ffe-43d8-a26b-b698312f9170",
+      "profile": {
+        "credit_score": 705,
+        "annual_income": 61000,
+        "state": "NY",
+        "employment_status": "employed",
+        "account_age_months": 30
+      }
+    },
+    {
+      "member_id": "4e23ca57-30a2-4e87-980a-5a5a82890fe1",
+      "profile": {
+        "annual_income": 27000,
+        "state": "CA",
+        "employment_status": "self_employed",
+        "account_age_months": 8
+      }
+    },
+    {
+      "member_id": "630d71f6-bf9c-4134-a147-e1c0ddb7cede",
+      "profile": {
+        "credit_score": 745,
+        "annual_income": 88000,
+        "employment_status": "employed",
+        "account_age_months": 60
+      }
+    },
+    {
+      "member_id": "9b80c41f-9793-4516-be68-ed0096313413",
+      "profile": {
+        "credit_score": 512,
+        "annual_income": 16500,
+        "state": "FL",
+        "account_age_months": 1
+      }
+    },
+    {
+      "member_id": "dd5bd84c-d59e-4e34-a622-a003d9d1e1f0",
+      "profile": {
+        "credit_score": 690,
+        "annual_income": 47000,
+        "state": "CA",
+        "employment_status": "employed"
+      }
+    },
+    {
+      "member_id": "e221d4a9-5272-4c21-8afe-860aa5e9c584",
+      "profile": {
+        "credit_score": 800,
+        "annual_income": 145000,
+        "state": "WA",
+        "employment_status": "self_employed",
+        "account_age_months": 120
+      }
+    },
+    {
+      "member_id": "effe1801-ada3-4ce2-aab0-293ae038032b",
+      "profile": {
+        "annual_income": 33000,
+        "state": "TX",
+        "employment_status": "employed",
+        "account_age_months": 14
+      }
+    },
+    {
+      "member_id": "c4061796-d6d2-48da-8f17-2e2cf0f21eca",
+      "profile": {
+        "credit_score": 575,
+        "state": "CA",
+        "employment_status": "student",
+        "account_age_months": 2
+      }
+    },
+    {
+      "member_id": "fb67446d-4b72-4ccd-9123-80e379e5176f",
+      "profile": {
+        "credit_score": 720,
+        "annual_income": 54000,
+        "state": "TX",
+        "account_age_months": 42
+      }
+    },
+    {
+      "member_id": "e7b98f71-c59c-477f-9f5e-4a8717b17d95",
+      "profile": {
+        "credit_score": 615,
+        "annual_income": 25500,
+        "employment_status": "retired",
+        "account_age_months": 216
+      }
+    },
+    {
+      "member_id": "a658bf8a-b0f5-4e07-b062-3dd322347a19",
+      "profile": {
+        "credit_score": 780,
+        "annual_income": 97000,
+        "state": "CA",
+        "employment_status": "employed",
+        "account_age_months": 72
+      }
+    },
+    {
+      "member_id": "bbaecedf-4a54-4ce2-bb29-8de8a9b8a5fa",
+      "profile": {
+        "credit_score": 648,
+        "state": "FL",
+        "employment_status": "self_employed",
+        "account_age_months": 6
+      }
+    },
+    {
+      "member_id": "1a89b624-71f5-44cf-a132-6a097d284739",
+      "profile": {
+        "annual_income": 15000,
+        "state": "TX",
+        "account_age_months": 0
+      }
+    },
+    {
+      "member_id": "82e7a463-1187-4fea-83c7-401db9ed72e3",
+      "profile": {
+        "credit_score": 715,
+        "annual_income": 63000,
+        "state": "WA",
+        "employment_status": "employed",
+        "account_age_months": 36
+      }
+    },
+    {
+      "member_id": "7ba0f08b-7612-4186-956d-77d9437a2771",
+      "profile": {
+        "credit_score": 683,
+        "state": "CA",
+        "employment_status": "employed",
+        "account_age_months": 20
+      }
+    },
+    {
+      "member_id": "6d43465b-3d5e-4ee4-9d5e-866a374629d6",
+      "profile": {
+        "credit_score": 830,
+        "annual_income": 120000,
+        "state": "TX",
+        "employment_status": "employed"
+      }
+    },
+    {
+      "member_id": "d1697d83-eb06-4667-925d-724b3d7f5b98",
+      "profile": {
+        "annual_income": 22500,
+        "employment_status": "student",
+        "account_age_months": 3
+      }
+    },
+    {
+      "member_id": "40458a58-35e1-42c6-b422-0a2f481104a4",
+      "profile": {
+        "credit_score": 670,
+        "annual_income": 38000,
+        "state": "TX",
+        "employment_status": "employed"
+      }
+    }
+  ]
+}

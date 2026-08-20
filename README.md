@@ -13,7 +13,7 @@ docker compose up
 
 This brings up Postgres and the FastAPI app with no other manual steps.
 The app container waits for Postgres to report healthy, then runs
-`alembic upgrade head` before starting the server.
+`alembic upgrade head` and seeds fixture data before starting the server.
 
 Once running, verify with:
 
@@ -25,6 +25,29 @@ curl http://localhost:8000/health
 
 ```
 docker compose exec app pytest
+```
+
+## Test fixtures
+
+`scripts/generate_fixtures.py` generates and seeds sample data for two
+credit unions:
+
+- `generate` (re)writes `scripts/fixtures/catalog.json` (products +
+  eligibility rules) and `scripts/fixtures/members.json` (sample member
+  profiles, deliberately sparse — many are missing fields the catalog's
+  rules check against). Both files are checked into the repo; re-run
+  this only when the fixture data itself needs to change.
+- `seed` reads those two files and inserts `credit_unions`, `products`,
+  `rulesets` (version 1, `is_latest`), and `member_profiles` (version
+  `"1.0"`, `is_latest`) rows. It never creates `decisions` rows — those
+  only come from `/evaluate`, which doesn't exist yet.
+
+`seed` is idempotent (matches existing rows via unique constraints, so
+re-running never creates duplicates) and runs automatically on every
+app container startup, right after migrations. To run it by hand:
+
+```
+docker compose exec app python scripts/generate_fixtures.py seed
 ```
 
 ## Guarantees
