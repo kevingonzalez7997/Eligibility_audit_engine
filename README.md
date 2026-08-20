@@ -28,3 +28,9 @@ docker compose exec app pytest
 ```
 
 ## Guarantees
+
+DB-level partial unique indexes guarantee at most one `is_latest` row per
+credit union (rulesets) and per member (member_profiles), and RESTRICT
+FKs keep decisions from ever pointing at a ruleset/profile version that
+gets deleted. They don't guarantee rows are actually append-only 
+that's an app-role grant, not yet applied here.

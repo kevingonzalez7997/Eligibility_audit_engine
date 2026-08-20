@@ -5,6 +5,7 @@ from alembic import context
 from sqlalchemy.ext.asyncio import create_async_engine
 
 from app.config import settings
+from app.db import Base
 
 # This is the Alembic Config object, which provides access to values
 # within the .ini file in use.
@@ -13,10 +14,7 @@ config = context.config
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)
 
-# No models exist yet, so there is nothing to autogenerate against.
-# Once the schema is designed, set target_metadata to the shared
-# declarative Base's .metadata here to enable autogenerate.
-target_metadata = None
+target_metadata = Base.metadata
 
 
 def run_migrations_offline() -> None:
